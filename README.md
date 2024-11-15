@@ -3,30 +3,9 @@
 This project aims to develop a bipedal robot, a two-legged robotic system designed to replicate human gait dynamics. Here, the robot’s movement is controlled by precise limb positioning through inverse kinematics, while stability is maintained by managing the center of mass during walking. This repository provides an overview of the fundamental concepts, codes and model for simulating and executing stable bipedal locomotion, with an emphasis on kinematics and balance control.
 
 ## Key Concepts and Tasks
-### PID Control Theory
-PID (Proportional-Integral-Derivative) control is a fundamental control theory that is used in control systems to maintain a desired output such as speed, position or temperature by continuously adjusting inputs based on feedback. A PID controller calculates the error as the difference between a desired setpoint (SP) and a measured process variable (PV). It then applies a correction based on three components: proportional, integral, and derivative terms.
-
-- **Proportional (P):** The proportional term responds to the current error. It provides an output that is directly proportional to the error, allowing the system to correct deviations quickly.
-
-- **Integral (I):** The integral term accounts for the accumulation of past errors. It helps to eliminate small errors that may not be fully corrected by the proportional term alone, achieving precise control over time.
-
-- **Derivative (D):** The derivative part predicts future error by considering the rate of change of the error. It reduces overshoot and prevents oscillations by slowing down the system as it approaches the desired value.
-
 ### Task 1: Cruise Controller 
 #### Aim
 To develop a Cruise Controller using Python and Matlab(simulink) for maintaining desired set point velocity of a car.
-#### Procedure
-In Python
-1. Set the mass of the vehicle(m) and the drag coefficient(b).
-2. Define the set-point velocity(v=20 m/s).
-3. Implemente a PID controller in Python.
-4. Determine the transfer function of the system.
-
-In Simulink
-1. Build the circuit of the cruise controller using the PID controller in Simulink.
-2. Initially, set the integral gain (Ki) and derivative gain (Kd) to zero and tune the proportional gain (Kp).
-3. After tuning Kp, tune the values of Ki and Kd to refine the controller's performance.
-
 **Simulink circuit design:**
 
 ![Screenshot 2024-11-07 235542](https://github.com/user-attachments/assets/b502fb53-0f23-4376-9cfc-54237ecd8016)
